@@ -1,0 +1,65 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:textAllCaps">false</item>
+        <item name="android:windowAnimationStyle">@style/Animation_Activity</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="colorPrimary">@color/mColorPrimary</item>
+        <item name="colorPrimaryDark">@color/mColorPrimaryDark</item>
+        <item name="colorAccent">@color/mColorAccent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <!--取消水波纹效果-->
+        <!--        <item name="android:colorControlHighlight">@android:color/transparent</item>-->
+    </style>
+
+    <!--Toolbar-->
+    <style name="actionBarStyle" parent="Widget.AppCompat.Toolbar">
+        <item name="contentInsetStart">0dp</item>
+        <item name="contentInsetEnd">0dp</item>
+    </style>
+    <!--启动页-->
+    <style name="AppTheme.Launcher" parent="AppTheme">
+        <item name="android:windowAnimationStyle">@style/Animation_Splash</item>
+    </style>
+
+    <style name="Animation_Splash" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/anim_scale_in</item>
+    </style>
+    <!--全局活动跳转动画-->
+    <style name="Animation_Activity" parent="@android:style/Animation.Activity">
+        <!-- 进入一个新的Activity的时候，A->B B进入动画 -->
+        <item name="android:activityOpenEnterAnimation">@anim/v_fragment_enter</item>
+        <!-- 进入一个新的Activity的时候，A->B A退出动画 -->
+        <!--        <item name="android:activityOpenExitAnimation">@anim/slide_right_out</item>-->
+        <!-- 退出一个Activity的时候，B返回到A A进入动画 -->
+        <!--        <item name="android:activityCloseEnterAnimation">@anim/slide_left_in</item>-->
+        <!-- 退出一个Activity的时候，B返回到A B退出动画 -->
+        <item name="android:activityCloseExitAnimation">@anim/v_fragment_exit</item>
+    </style>
+
+    <style name="TextInputWhiteStyle" parent="AppTheme">
+        <!--输入框提示字体色-->
+        <item name="android:textColorHint">#ffffff</item>
+        <!--输入框下划线默认颜色-->
+        <!--        <item name="colorControlNormal">@color/white</item>-->
+        <!--输入框下划线选中状态色-->
+        <item name="colorControlActivated">#ffffff</item>
+        <!--输入框光标颜色-->
+        <item name="colorControlHighlight">#ffffff</item>
+    </style>
+
+    <style name="TextInputThemeStyle" parent="AppTheme">
+        <!--输入框提示字体色-->
+        <!--        <item name="android:textColorHint">@color/white</item>-->
+        <!--输入框下划线默认颜色-->
+        <item name="colorControlNormal">@color/md_theme_red</item>
+        <!--输入框下划线选中状态色-->
+        <item name="colorControlActivated">@color/md_theme_red</item>
+        <!--输入框光标颜色-->
+        <item name="colorControlHighlight">@color/md_theme_red</item>
+    </style>
+
+
+</resources>
