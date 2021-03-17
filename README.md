@@ -1,5 +1,7 @@
 # BaseMvvmScaffold
 
+**集成脚手架的完整项目，功能更多，可玩性更高，请移步： **[玩安卓Mvvm组件化app](https://github.com/cdalwyn/mvvmcomponent)
+
 ## 介绍
 
 旨在更方便快速集成地集成到新项目中，在[玩安卓Mvvm组件化app](https://github.com/cdalwyn/mvvmcomponent)中抽出通用组件包，撇去业务资源和非必要第三方库，包装成更通用、更易上手的Mvvm组件化脚手架。
@@ -171,3 +173,22 @@ object ViewAdapter {
 - [PermissionX ：郭霖出品必属精品的权限管理](https://github.com/guolindev/PermissionX)
 - ······
 - **致敬所有为开源贡献的大佬！**
+
+## License
+
+```
+   Copyright 2021 cdalwyn(陈志龙)
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+```
+
