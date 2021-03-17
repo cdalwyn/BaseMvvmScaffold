@@ -1,6 +1,6 @@
 # BaseMvvmScaffold
 
-**集成脚手架的完整项目，功能更多，可玩性更高，请移步： **[玩安卓Mvvm组件化app](https://github.com/cdalwyn/mvvmcomponent)
+**集成脚手架的完整项目，功能更多，可玩性更高，请移步:**[玩安卓Mvvm组件化app](https://github.com/cdalwyn/mvvmcomponent)
 
 ## 介绍
 
@@ -18,7 +18,7 @@
 
 ###  **准备工作**
 
-将**lib_base**模块导入，把**config.gradle(依赖库信息)、module.build.gradle(组件通用gradle配置)**加入到根目录下，里面主要配置都有注释，具体参考Demo。
+将**lib_base**模块导入，把**config.gradle(依赖库信息)、module.build.gradle(组件通用gradle配置)**加入到根目录下，里面主要配置都有注释，其他组件的配置请参考module_login。
 
 在根目录gradle.properties文件中添加：
 
