@@ -26,12 +26,4 @@ interface IBaseViewModel : LifecycleObserver {
 
     @OnLifecycleEvent(Lifecycle.Event.ON_PAUSE)
     fun onPause()
-    /**
-     * 注册RxBus
-     */
-    //    void registerRxBus();
-    /**
-     * 移除RxBus
-     */
-    //    void removeRxBus();
 }

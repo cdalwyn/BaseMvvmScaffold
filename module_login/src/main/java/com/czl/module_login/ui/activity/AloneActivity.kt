@@ -1,7 +1,5 @@
 package com.czl.module_login.ui.activity
 
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
 import com.czl.lib_base.base.BaseActivity
 import com.czl.module_login.BR
 import com.czl.module_login.R
@@ -15,6 +13,15 @@ class AloneActivity : BaseActivity<LoginActivityAloneBinding,AloneViewModel>(){
 
     override fun initVariableId(): Int {
         return BR.viewModel
+    }
+
+    override fun initData() {
+        super.initData()
+        viewModel.apply {
+            btnBackVisibility.set(false)
+            toolbarRightText.set("设置")
+            tvTitle.set("测试")
+        }
     }
 
 }

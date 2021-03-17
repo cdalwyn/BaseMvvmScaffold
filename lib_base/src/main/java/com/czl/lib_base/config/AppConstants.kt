@@ -7,8 +7,7 @@ package com.czl.lib_base.config
  */
 interface AppConstants {
     object SpKey {
-        const val SYS_UI_MODE: String = "sys_ui_mode"
-        const val USER_UI_MODE: String = "user_ui_mode"
+
     }
 
     /**

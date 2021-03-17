@@ -1,6 +1,7 @@
 package com.czl.lib_base.base
 
 import android.os.Bundle
+import androidx.databinding.ObservableBoolean
 import androidx.databinding.ObservableField
 import androidx.databinding.ObservableInt
 import androidx.lifecycle.AndroidViewModel
@@ -34,8 +35,8 @@ open class BaseViewModel<M : BaseModel>(application: MyApplication, val model: M
     // 标题栏右图标id
     val ivToolbarIconRes = ObservableInt(0)
 
-    // 标题栏返回箭头的显示隐藏 1 显示 0 隐藏
-    val btnBackVisibility = ObservableField("1")
+    // 标题栏返回箭头的显示隐藏
+    val btnBackVisibility = ObservableBoolean(true)
 
     /**
      * 标题栏右图标点击事件 VM层重写setToolbarRightClick()

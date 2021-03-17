@@ -8,7 +8,6 @@ import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
 import androidx.lifecycle.ViewModelProvider
-import androidx.recyclerview.widget.RecyclerView
 import com.czl.lib_base.R
 import com.czl.lib_base.mvvm.ui.ContainerFmActivity
 import com.czl.lib_base.route.RouteCenter

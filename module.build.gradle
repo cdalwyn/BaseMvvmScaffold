@@ -68,6 +68,7 @@ android {
         }
     }
     dataBinding {
+        // 开启数据绑定
         enabled true
     }
 }

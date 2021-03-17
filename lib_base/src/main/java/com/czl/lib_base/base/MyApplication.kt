@@ -4,13 +4,11 @@ import android.app.Activity
 import android.app.Application
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatDelegate
-import androidx.core.content.ContextCompat
 import com.alibaba.android.arouter.launcher.ARouter
 import com.blankj.utilcode.util.LogUtils
 import com.blankj.utilcode.util.Utils
 import com.bumptech.glide.Glide
 import com.czl.lib_base.BuildConfig
-import com.czl.lib_base.R
 import com.czl.lib_base.config.AppConstants
 import com.czl.lib_base.di.allModule
 import com.czl.lib_base.util.SpHelper
@@ -67,21 +65,7 @@ open class MyApplication : Application() {
         }
         // 设置吐司不以队列循环展示
         Toasty.Config.getInstance().allowQueue(false).apply()
-
-        // 切换情景模式
-        initNightMode()
     }
-
-    private fun initNightMode() {
-        if (SpHelper.decodeBoolean(AppConstants.SpKey.SYS_UI_MODE))
-            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM)
-        else
-            AppCompatDelegate.setDefaultNightMode(
-                if (SpHelper.decodeBoolean(AppConstants.SpKey.USER_UI_MODE)) AppCompatDelegate.MODE_NIGHT_YES
-                else AppCompatDelegate.MODE_NIGHT_NO
-            )
-    }
-
 
     private fun setApplication(application: Application) {
         //初始化工具类

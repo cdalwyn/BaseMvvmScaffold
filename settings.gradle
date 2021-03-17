@@ -1,2 +1,2 @@
 include ':app',':lib_base',"module_login"
-rootProject.name = "MvvmBreadPiece"
+rootProject.name = "BaseMvvmScaffold"
