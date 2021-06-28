@@ -44,15 +44,12 @@ ext {
             "arouter_api"                          : "com.alibaba:arouter-api:1.4.1",
             "arouter_compiler"                     : "com.alibaba:arouter-compiler:1.2.2",
             //rxjava
-            "rxjava"                               : "io.reactivex.rxjava2:rxjava:2.2.3",
             "rxandroid"                            : "io.reactivex.rxjava2:rxandroid:2.1.0",
             //rx系列与View生命周期同步
             "rxlifecycle"                          : "com.trello.rxlifecycle3:rxlifecycle:3.0.0",
             "rxlifecycle-components"               : "com.trello.rxlifecycle3:rxlifecycle-components:3.0.0",
             //rxbinding
             "rxbinding"                            : "com.jakewharton.rxbinding3:rxbinding:3.0.0",
-            //rx 6.0权限请求
-//            "rxpermissions"                        : "com.github.tbruyelle:rxpermissions:0.10.2",
             //network
             "okhttp"                               : "com.squareup.okhttp3:okhttp:3.10.0",
             "retrofit"                             : "com.squareup.retrofit2:retrofit:2.4.0",
@@ -64,17 +61,9 @@ ext {
             'glide-transfer'                       : 'jp.wasabeef:glide-transformations:4.3.0',
             //json解析
             "gson"                                 : "com.google.code.gson:gson:2.8.5",
-            //material-dialogs
-            "material-dialogs-core"                : "com.afollestad.material-dialogs:core:0.9.6.0",
-            "material-dialogs-commons"             : "com.afollestad.material-dialogs:commons:0.9.6.0",
-            //recyclerview的databinding套装
-            "bindingcollectionadapter"             : "me.tatarka.bindingcollectionadapter2:bindingcollectionadapter:4.0.0",
-            "bindingcollectionadapter-recyclerview": "me.tatarka.bindingcollectionadapter2:bindingcollectionadapter-recyclerview:4.0.0",
             //Google AAC
             "lifecycle-extensions"                 : "androidx.lifecycle:lifecycle-extensions:2.0.0",
             "lifecycle-compiler"                   : "androidx.lifecycle:lifecycle-compiler:2.0.0",
-            //MVVMHabit
-            "MVVMHabit"                            : "com.github.goldze:MVVMHabit:3.1.3",
             "toolbar"                              : "com.gyf.immersionbar:immersionbar:3.0.0",
             'viewpager2'                           : 'me.tatarka.bindingcollectionadapter2:bindingcollectionadapter-viewpager2:4.0.0',
             'koin_scope'                           : "org.koin:koin-androidx-scope:${versions["koin-version"]}",
@@ -88,40 +77,11 @@ ext {
             'permissionx'                          : 'com.permissionx.guolindev:permissionx:1.4.0',
             // 内存泄漏检查
             'leakcanary'                           : 'com.squareup.leakcanary:leakcanary-android:2.5',
-            'navigation'                           : 'com.ashokvarma.android:bottom-navigation-bar:2.2.0',
-            'banner'                               : 'com.youth.banner:banner:2.1.0',
             'toast'                                : 'com.github.GrenderG:Toasty:1.5.0',
             'refresh'                              : 'com.scwang.smart:refresh-layout-kernel:2.0.1',
             'refresh-header'                       : 'com.scwang.smart:refresh-header-material:2.0.1',
             'refresh-footer-ball'                  : 'com.scwang.smart:refresh-footer-ball:2.0.1',
             'refresh-footer-classic'               : 'com.scwang.smart:refresh-footer-classics:2.0.1',
-            'webview'                              : 'com.just.agentweb:agentweb-androidx:4.1.4',
-            'tablayout'                            : 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar',
             'autosize'                             : "me.jessyan:autosize:1.1.2",
-            'xpopup'                               : 'com.lxj:xpopup:2.2.5',
-            'searchview'                           : 'com.github.mancj:MaterialSearchBar:0.8.5',
-            'shadowlayout'                         : 'com.github.lihangleo2:ShadowLayout:3.1.8',
-            // 骨架屏
-            'skeleton'                             : 'com.ethanhua:skeleton:1.1.2',
-            'shimmer-recyclerView'                 : 'com.github.sharish:ShimmerRecyclerView:v1.3',
-            'litepal'                              : 'org.litepal.guolindev:core:3.2.2',
-            'adapter-helper'                       : 'com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.4',
-            'animation'                            : 'com.daimajia.androidanimations:library:2.4@aar',
-            'qrcode'                               : "cn.bingoogolapple:bga-qrcode-zxing:1.3.7",
-            'lottie'                               : 'com.airbnb.android:lottie:3.5.0',
-            'swipe_menu'                           : "com.github.anzaizai:EasySwipeMenuLayout:1.1.4",
-            'round_imageview'                      : 'com.makeramen:roundedimageview:2.3.0',
-            'loadsir'                              : 'com.kingja.loadsir:loadsir:1.3.8',
-            'loadingview'                          : 'com.github.ybq:Android-SpinKit:1.4.0',
-            'ConsecutiveScroller'                  : 'com.github.donkingliang:ConsecutiveScroller:4.4.0',
-            'flexbox'                              : 'com.google.android:flexbox:2.0.1',
-            'linkage-recyclerview'                 : 'com.kunminx.linkage:linkage-recyclerview:2.1.5',
-            'dokitx'                               : 'com.didichuxing.doraemonkit:dokitx:3.3.5',
-            'calendarview'                         : 'com.haibin:calendarview:3.7.0',
-            'dialog-datetime'                      : 'com.afollestad.material-dialogs:datetime:3.3.0',
-            'dialog-lifecycle'                     : 'com.afollestad.material-dialogs:lifecycle:3.3.0',
-            'matisse'                              : 'com.zhihu.android:matisse:0.5.3-beta3'
-
-
     ]
 }

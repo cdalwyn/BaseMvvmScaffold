@@ -2,14 +2,12 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
         <!-- Customize your theme here. -->
-        <item name="android:textAllCaps">false</item>
         <item name="android:windowAnimationStyle">@style/Animation_Activity</item>
         <item name="android:windowContentTransitions">true</item>
         <item name="colorPrimary">@color/mColorPrimary</item>
         <item name="colorPrimaryDark">@color/mColorPrimaryDark</item>
         <item name="colorAccent">@color/mColorAccent</item>
         <item name="android:windowIsTranslucent">true</item>
-        <item name="android:fontFamily">sans-serif</item>
         <!--取消水波纹效果-->
         <!--        <item name="android:colorControlHighlight">@android:color/transparent</item>-->
     </style>
@@ -49,17 +47,6 @@
         <!--输入框光标颜色-->
         <item name="colorControlHighlight">#ffffff</item>
     </style>
-
-    <style name="TextInputThemeStyle" parent="AppTheme">
-        <!--输入框提示字体色-->
-        <!--        <item name="android:textColorHint">@color/white</item>-->
-        <!--输入框下划线默认颜色-->
-        <item name="colorControlNormal">@color/md_theme_red</item>
-        <!--输入框下划线选中状态色-->
-        <item name="colorControlActivated">@color/md_theme_red</item>
-        <!--输入框光标颜色-->
-        <item name="colorControlHighlight">@color/md_theme_red</item>
-    </style>
-
+    
 
 </resources>

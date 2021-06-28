@@ -120,17 +120,6 @@ abstract class BaseFragment<V : ViewDataBinding, VM : BaseViewModel<*>> :
     private fun initViewDataBinding() {
         viewModelId = initVariableId()
         viewModel = initViewModel()
-//        if (viewModel == null) {
-//            val modelClass: Class<*>
-//            val type = javaClass.genericSuperclass
-//            modelClass = if (type is ParameterizedType) {
-//                type.actualTypeArguments[1] as Class<*>
-//            } else {
-//                //如果没有指定泛型参数，则默认使用BaseViewModel
-//                BaseViewModel::class.java
-//            }
-//            viewModel = createViewModel<ViewModel>(this, modelClass) as VM
-//        }
         rootBinding?.setVariable(viewModelId, viewModel)
         rootBinding?.lifecycleOwner = this
         binding.setVariable(viewModelId, viewModel)
@@ -309,6 +298,9 @@ abstract class BaseFragment<V : ViewDataBinding, VM : BaseViewModel<*>> :
 
     override fun initViewObservable() {}
 
+    /**
+     * 如果使用带有标题栏的布局，则不是带有
+     */
     open fun isImmersionBarEnabled(): Boolean {
         return useBaseLayout()
     }

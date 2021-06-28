@@ -5,7 +5,6 @@ import androidx.fragment.app.Fragment
 import java.util.*
 
 /**
- * Created by goldze on 2017/6/15.
  * activity堆栈式管理
  */
 class AppManager private constructor() {
@@ -86,7 +85,7 @@ class AppManager private constructor() {
     /**
      * 获取指定的Activity
      *
-     * @author kymjs
+     * @author
      */
     fun getActivity(cls: Class<*>): Activity? {
         if (activityStack != null) for (activity in activityStack!!) {
@@ -97,41 +96,6 @@ class AppManager private constructor() {
         return null
     }
 
-    /**
-     * 添加Fragment到堆栈
-     */
-    fun addFragment(fragment: Fragment) {
-        if (fragmentStack == null) {
-            fragmentStack = Stack()
-        }
-        fragmentStack!!.add(fragment)
-    }
-
-    /**
-     * 移除指定的Fragment
-     */
-    fun removeFragment(fragment: Fragment?) {
-        if (fragment != null) {
-            fragmentStack!!.remove(fragment)
-        }
-    }
-
-    /**
-     * 是否有Fragment
-     */
-    val isFragment: Boolean
-        get() = if (fragmentStack != null) {
-            !fragmentStack!!.isEmpty()
-        } else false
-
-    /**
-     * 获取当前Activity（堆栈中最后一个压入的）
-     */
-    fun currentFragment(): Fragment? {
-        return if (fragmentStack != null) {
-            fragmentStack!!.lastElement()
-        } else null
-    }
 
     /**
      * 退出应用程序
@@ -155,9 +119,6 @@ class AppManager private constructor() {
     companion object {
         var activityStack: Stack<Activity>? = null
             private set
-        var fragmentStack: Stack<Fragment>? = null
-            private set
-
         /**
          * 单例模式
          *

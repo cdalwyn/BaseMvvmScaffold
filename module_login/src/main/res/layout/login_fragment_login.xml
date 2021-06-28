@@ -90,7 +90,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="60dp"
                 android:layout_marginEnd="60dp"
-                android:background="@color/md_theme_red"
+                android:background="@color/mColorAccent"
                 android:text="登录"
                 android:textColor="#ffffff"
                 app:layout_constraintBottom_toBottomOf="parent"

@@ -70,8 +70,7 @@ dependencies {
     //support
     api rootProject.ext.support["support-v4"]
     api rootProject.ext.support["recyclerview-v7"]
-    //rxjava
-    api rootProject.ext.dependencies.rxjava
+    //rxandroid
     api rootProject.ext.dependencies.rxandroid
     //rx管理View的生命周期
     api(rootProject.ext.dependencies.rxlifecycle) {

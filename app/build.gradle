@@ -27,12 +27,8 @@ android {
     }
     buildTypes {
         release {
-            minifyEnabled true
-            zipAlignEnabled true  //压缩优化
-            shrinkResources true  //移出无用资源
-            debuggable true
+            minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-//            signingConfig signingConfigs.release
         }
         debug {
             minifyEnabled false
