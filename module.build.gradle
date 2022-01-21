@@ -6,7 +6,7 @@ if (isBuildModule.toBoolean()) {
     apply plugin: 'com.android.library'
 }
 apply plugin: 'kotlin-android'
-apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-parcelize'
 apply plugin: 'kotlin-kapt'
 
 android {
@@ -19,20 +19,11 @@ android {
         versionName rootProject.ext.android.versionName
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         //阿里路由框架配置
-        javaCompileOptions {
-            annotationProcessorOptions {
-                arguments = [AROUTER_MODULE_NAME: project.getName()]
-                includeCompileClasspath = true
+        kapt {
+            arguments {
+                arg("AROUTER_MODULE_NAME", project.getName())
             }
         }
-//        ndk {
-//            abiFilters 'armeabi-v7a'
-//        }
-//        kapt {
-//            arguments {
-//                arg("AROUTER_MODULE_NAME", project.getName())
-//            }
-//        }
     }
     kotlinOptions {
         jvmTarget = "1.8"
