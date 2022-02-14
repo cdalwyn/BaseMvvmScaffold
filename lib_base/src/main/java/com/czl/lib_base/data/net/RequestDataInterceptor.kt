@@ -5,9 +5,6 @@ import okhttp3.Interceptor
 import okhttp3.RequestBody
 import okhttp3.Response
 import okio.Buffer
-import org.koin.core.component.KoinApiExtension
-import org.koin.core.component.KoinComponent
-import org.koin.core.component.inject
 import java.io.IOException
 import java.net.URLDecoder
 import java.nio.charset.StandardCharsets

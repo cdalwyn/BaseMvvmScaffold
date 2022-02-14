@@ -1,7 +1,7 @@
 ext {
     //android开发版本配置
     android = [
-            compileSdkVersion: 29,
+            compileSdkVersion: 30,
             buildToolsVersion: "30.0.0",
             applicationId    : "com.czl.mvvmscaffold",
             minSdkVersion    : 21,
@@ -26,17 +26,7 @@ ext {
     ]
     //version配置
     versions = [
-            "support-version": "1.0.0",
-            "junit-version"  : "4.12",
-            "koin-version"   : "2.2.0"
-    ]
-    //support配置
-    support = [
-            'support-v4'              : "androidx.legacy:legacy-support-v4:${versions["support-version"]}",
-            'recyclerview-v7'         : "androidx.recyclerview:recyclerview:${versions["support-version"]}",
-            'support-v13'             : "androidx.legacy:legacy-support-v13:${versions["support-version"]}",
-            'animated-vector-drawable': "androidx.vectordrawable:vectordrawable-animated:${versions["support-version"]}",
-            'junit'                   : "junit:junit:${versions["junit-version"]}",
+            "koin-version"   : "3.1.5"
     ]
     //依赖第三方配置
     dependencies = [
@@ -66,9 +56,7 @@ ext {
             "lifecycle-compiler"                   : "androidx.lifecycle:lifecycle-compiler:2.0.0",
             "toolbar"                              : "com.gyf.immersionbar:immersionbar:3.0.0",
             'viewpager2'                           : 'me.tatarka.bindingcollectionadapter2:bindingcollectionadapter-viewpager2:4.0.0',
-            'koin_scope'                           : "org.koin:koin-androidx-scope:${versions["koin-version"]}",
-            'koin_viewmodel'                       : "org.koin:koin-androidx-viewmodel:${versions["koin-version"]}",
-            'koin_fragment'                        : "org.koin:koin-androidx-fragment:${versions["koin-version"]}",
+            'koin_core'                            : "io.insert-koin:koin-android:${versions["koin-version"]}",
             'utils'                                : 'com.blankj:utilcodex:1.30.5',
             'mmkv'                                 : 'com.tencent:mmkv:1.0.23',
             'livebus'                              : 'com.jeremyliao:live-event-bus-x:1.7.2',

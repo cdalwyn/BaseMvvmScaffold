@@ -57,9 +57,6 @@ android {
 }
 dependencies {
     api fileTree(dir: "libs", include: ["*.jar"])
-    //support
-    api rootProject.ext.support["support-v4"]
-    api rootProject.ext.support["recyclerview-v7"]
     //rxandroid
     api rootProject.ext.dependencies.rxandroid
     //rx管理View的生命周期
@@ -105,9 +102,7 @@ dependencies {
     api rootProject.ext.androidx["kotlin_core"]
     api rootProject.ext.dependencies["arouter_api"]
     api rootProject.ext.dependencies["arouter_compiler"]
-    api rootProject.ext.dependencies["koin_scope"]
-    api rootProject.ext.dependencies["koin_viewmodel"]
-    api rootProject.ext.dependencies["koin_fragment"]
+    api rootProject.ext.dependencies["koin_core"]
     api rootProject.ext.dependencies["utils"]
     api rootProject.ext.dependencies["mmkv"]
     api rootProject.ext.dependencies["livebus"]
